@@ -1,0 +1,723 @@
+hadoop-user@hadoop-desk:~$ ./start-hadoop
+starting namenode, logging to /home/hadoop-user/hadoop/bin/../logs/hadoop-hadoop-user-namenode-hadoop-desk.out
+ starting datanode, logging to /home/hadoop-user/hadoop/bin/../logs/hadoop-hadoop-user-datanode-hadoop-desk.out
+ starting secondarynamenode, logging to /home/hadoop-user/hadoop/bin/../logs/hadoop-hadoop-user-secondarynamenode-hadoop-desk.out
+starting jobtracker, logging to /home/hadoop-user/hadoop/bin/../logs/hadoop-hadoop-user-jobtracker-hadoop-desk.out
+ starting tasktracker, logging to /home/hadoop-user/hadoop/bin/../logs/hadoop-hadoop-user-tasktracker-hadoop-desk.out
+hadoop-user@hadoop-desk:~$ cd hadoop-0.18.0
+hadoop-user@hadoop-desk:~/hadoop-0.18.0$ hadoop jar hadoop-0.18.0-examples.jar pi 10 10000
+Number of Maps = 10 Samples per Map = 10000
+Wrote input for Map #0
+Wrote input for Map #1
+Wrote input for Map #2
+Wrote input for Map #3
+Wrote input for Map #4
+Wrote input for Map #5
+Wrote input for Map #6
+Wrote input for Map #7
+Wrote input for Map #8
+Wrote input for Map #9
+Starting Job
+20/09/06 03:05:09 INFO mapred.FileInputFormat: Total input paths to process : 10
+20/09/06 03:05:09 INFO mapred.FileInputFormat: Total input paths to process : 10
+20/09/06 03:05:10 INFO mapred.JobClient: Running job: job_202009060304_0001
+20/09/06 03:05:11 INFO mapred.JobClient:  map 0% reduce 0%
+20/09/06 03:05:17 INFO mapred.JobClient:  map 20% reduce 0%
+20/09/06 03:05:18 INFO mapred.JobClient:  map 40% reduce 0%
+20/09/06 03:05:20 INFO mapred.JobClient:  map 60% reduce 0%
+20/09/06 03:05:21 INFO mapred.JobClient:  map 80% reduce 0%
+20/09/06 03:05:22 INFO mapred.JobClient:  map 90% reduce 0%
+20/09/06 03:05:23 INFO mapred.JobClient:  map 100% reduce 0%
+20/09/06 03:05:33 INFO mapred.JobClient:  map 100% reduce 13%
+20/09/06 03:05:38 INFO mapred.JobClient:  map 100% reduce 23%
+20/09/06 03:05:43 INFO mapred.JobClient: Job complete: job_202009060304_0001
+20/09/06 03:05:43 INFO mapred.JobClient: Counters: 16
+20/09/06 03:05:43 INFO mapred.JobClient:   File Systems
+20/09/06 03:05:43 INFO mapred.JobClient:     HDFS bytes read=1180
+20/09/06 03:05:43 INFO mapred.JobClient:     HDFS bytes written=212
+20/09/06 03:05:43 INFO mapred.JobClient:     Local bytes read=388
+20/09/06 03:05:43 INFO mapred.JobClient:     Local bytes written=1248
+20/09/06 03:05:43 INFO mapred.JobClient:   Job Counters
+20/09/06 03:05:43 INFO mapred.JobClient:     Launched reduce tasks=1
+20/09/06 03:05:43 INFO mapred.JobClient:     Launched map tasks=10
+20/09/06 03:05:43 INFO mapred.JobClient:     Data-local map tasks=10
+20/09/06 03:05:43 INFO mapred.JobClient:   Map-Reduce Framework
+20/09/06 03:05:43 INFO mapred.JobClient:     Reduce input groups=2
+20/09/06 03:05:43 INFO mapred.JobClient:     Combine output records=0
+20/09/06 03:05:43 INFO mapred.JobClient:     Map input records=10
+20/09/06 03:05:43 INFO mapred.JobClient:     Reduce output records=0
+20/09/06 03:05:43 INFO mapred.JobClient:     Map output bytes=320
+20/09/06 03:05:43 INFO mapred.JobClient:     Map input bytes=240
+20/09/06 03:05:43 INFO mapred.JobClient:     Combine input records=0
+20/09/06 03:05:43 INFO mapred.JobClient:     Map output records=20
+20/09/06 03:05:43 INFO mapred.JobClient:     Reduce input records=20
+Job Finished in 34.132 seconds
+Estimated value of PI is 3.1462
+hadoop-user@hadoop-desk:~/hadoop-0.18.0$ hadoop jar hadoop-0.18.0-examples.jar pi 10 100000
+Number of Maps = 10 Samples per Map = 100000
+Wrote input for Map #0
+Wrote input for Map #1
+Wrote input for Map #2
+Wrote input for Map #3
+Wrote input for Map #4
+Wrote input for Map #5
+Wrote input for Map #6
+Wrote input for Map #7
+Wrote input for Map #8
+Wrote input for Map #9
+Starting Job
+20/09/06 03:06:04 INFO mapred.FileInputFormat: Total input paths to process : 10
+20/09/06 03:06:04 INFO mapred.FileInputFormat: Total input paths to process : 10
+20/09/06 03:06:04 INFO mapred.JobClient: Running job: job_202009060304_0002
+20/09/06 03:06:05 INFO mapred.JobClient:  map 0% reduce 0%
+20/09/06 03:06:09 INFO mapred.JobClient:  map 20% reduce 0%
+20/09/06 03:06:11 INFO mapred.JobClient:  map 40% reduce 0%
+20/09/06 03:06:12 INFO mapred.JobClient:  map 60% reduce 0%
+20/09/06 03:06:13 INFO mapred.JobClient:  map 80% reduce 0%
+20/09/06 03:06:15 INFO mapred.JobClient:  map 100% reduce 0%
+20/09/06 03:06:25 INFO mapred.JobClient:  map 100% reduce 13%
+20/09/06 03:06:30 INFO mapred.JobClient:  map 100% reduce 23%
+20/09/06 03:06:35 INFO mapred.JobClient: Job complete: job_202009060304_0002
+20/09/06 03:06:35 INFO mapred.JobClient: Counters: 16
+20/09/06 03:06:35 INFO mapred.JobClient:   File Systems
+20/09/06 03:06:35 INFO mapred.JobClient:     HDFS bytes read=1180
+20/09/06 03:06:35 INFO mapred.JobClient:     HDFS bytes written=212
+20/09/06 03:06:35 INFO mapred.JobClient:     Local bytes read=388
+20/09/06 03:06:35 INFO mapred.JobClient:     Local bytes written=1248
+20/09/06 03:06:35 INFO mapred.JobClient:   Job Counters
+20/09/06 03:06:35 INFO mapred.JobClient:     Launched reduce tasks=1
+20/09/06 03:06:35 INFO mapred.JobClient:     Launched map tasks=10
+20/09/06 03:06:35 INFO mapred.JobClient:     Data-local map tasks=10
+20/09/06 03:06:35 INFO mapred.JobClient:   Map-Reduce Framework
+20/09/06 03:06:35 INFO mapred.JobClient:     Reduce input groups=2
+20/09/06 03:06:35 INFO mapred.JobClient:     Combine output records=0
+20/09/06 03:06:35 INFO mapred.JobClient:     Map input records=10
+20/09/06 03:06:35 INFO mapred.JobClient:     Reduce output records=0
+20/09/06 03:06:35 INFO mapred.JobClient:     Map output bytes=320
+20/09/06 03:06:35 INFO mapred.JobClient:     Map input bytes=240
+20/09/06 03:06:35 INFO mapred.JobClient:     Combine input records=0
+20/09/06 03:06:35 INFO mapred.JobClient:     Map output records=20
+20/09/06 03:06:35 INFO mapred.JobClient:     Reduce input records=20
+Job Finished in 31.717 seconds
+Estimated value of PI is 3.143264
+hadoop-user@hadoop-desk:~/hadoop-0.18.0$ hadoop jar hadoop-0.18.0-examples.jar pi 10 10000000
+Number of Maps = 10 Samples per Map = 10000000
+Wrote input for Map #0
+Wrote input for Map #1
+Wrote input for Map #2
+Wrote input for Map #3
+Wrote input for Map #4
+Wrote input for Map #5
+Wrote input for Map #6
+Wrote input for Map #7
+Wrote input for Map #8
+Wrote input for Map #9
+Starting Job
+20/09/06 03:06:52 INFO mapred.FileInputFormat: Total input paths to process : 10
+20/09/06 03:06:52 INFO mapred.FileInputFormat: Total input paths to process : 10
+20/09/06 03:06:52 INFO mapred.JobClient: Running job: job_202009060304_0003
+20/09/06 03:06:53 INFO mapred.JobClient:  map 0% reduce 0%
+20/09/06 03:06:58 INFO mapred.JobClient:  map 20% reduce 0%
+20/09/06 03:07:01 INFO mapred.JobClient:  map 40% reduce 0%
+20/09/06 03:07:04 INFO mapred.JobClient:  map 60% reduce 0%
+20/09/06 03:07:07 INFO mapred.JobClient:  map 80% reduce 0%
+20/09/06 03:07:11 INFO mapred.JobClient:  map 100% reduce 0%
+20/09/06 03:07:21 INFO mapred.JobClient:  map 100% reduce 13%
+20/09/06 03:07:26 INFO mapred.JobClient:  map 100% reduce 20%
+20/09/06 03:07:32 INFO mapred.JobClient: Job complete: job_202009060304_0003
+20/09/06 03:07:32 INFO mapred.JobClient: Counters: 16
+20/09/06 03:07:32 INFO mapred.JobClient:   File Systems
+20/09/06 03:07:32 INFO mapred.JobClient:     HDFS bytes read=1180
+20/09/06 03:07:32 INFO mapred.JobClient:     HDFS bytes written=212
+20/09/06 03:07:32 INFO mapred.JobClient:     Local bytes read=388
+20/09/06 03:07:32 INFO mapred.JobClient:     Local bytes written=1248
+20/09/06 03:07:32 INFO mapred.JobClient:   Job Counters
+20/09/06 03:07:32 INFO mapred.JobClient:     Launched reduce tasks=1
+20/09/06 03:07:32 INFO mapred.JobClient:     Launched map tasks=10
+20/09/06 03:07:32 INFO mapred.JobClient:     Data-local map tasks=10
+20/09/06 03:07:32 INFO mapred.JobClient:   Map-Reduce Framework
+20/09/06 03:07:32 INFO mapred.JobClient:     Reduce input groups=2
+20/09/06 03:07:32 INFO mapred.JobClient:     Combine output records=0
+20/09/06 03:07:32 INFO mapred.JobClient:     Map input records=10
+20/09/06 03:07:32 INFO mapred.JobClient:     Reduce output records=0
+20/09/06 03:07:32 INFO mapred.JobClient:     Map output bytes=320
+20/09/06 03:07:32 INFO mapred.JobClient:     Map input bytes=240
+20/09/06 03:07:32 INFO mapred.JobClient:     Combine input records=0
+20/09/06 03:07:32 INFO mapred.JobClient:     Map output records=20
+20/09/06 03:07:32 INFO mapred.JobClient:     Reduce input records=20
+Job Finished in 39.695 seconds
+Estimated value of PI is 3.14120512
+hadoop-user@hadoop-desk:~/hadoop-0.18.0$ hadoop jar hadoop-0.18.0-examples.jar pi 15 10000
+Number of Maps = 15 Samples per Map = 10000
+Wrote input for Map #0
+Wrote input for Map #1
+Wrote input for Map #2
+Wrote input for Map #3
+Wrote input for Map #4
+Wrote input for Map #5
+Wrote input for Map #6
+Wrote input for Map #7
+Wrote input for Map #8
+Wrote input for Map #9
+Wrote input for Map #10
+Wrote input for Map #11
+Wrote input for Map #12
+Wrote input for Map #13
+Wrote input for Map #14
+Starting Job
+20/09/06 03:08:05 INFO mapred.FileInputFormat: Total input paths to process : 15
+20/09/06 03:08:05 INFO mapred.FileInputFormat: Total input paths to process : 15
+20/09/06 03:08:05 INFO mapred.JobClient: Running job: job_202009060304_0004
+20/09/06 03:08:06 INFO mapred.JobClient:  map 0% reduce 0%
+20/09/06 03:08:08 INFO mapred.JobClient:  map 13% reduce 0%
+20/09/06 03:08:09 INFO mapred.JobClient:  map 26% reduce 0%
+20/09/06 03:08:11 INFO mapred.JobClient:  map 40% reduce 0%
+20/09/06 03:08:12 INFO mapred.JobClient:  map 53% reduce 0%
+20/09/06 03:08:14 INFO mapred.JobClient:  map 66% reduce 0%
+20/09/06 03:08:15 INFO mapred.JobClient:  map 80% reduce 0%
+20/09/06 03:08:17 INFO mapred.JobClient:  map 93% reduce 0%
+20/09/06 03:08:18 INFO mapred.JobClient:  map 100% reduce 0%
+20/09/06 03:08:27 INFO mapred.JobClient:  map 100% reduce 8%
+20/09/06 03:08:32 INFO mapred.JobClient:  map 100% reduce 13%
+20/09/06 03:08:33 INFO mapred.JobClient:  map 100% reduce 15%
+20/09/06 03:08:37 INFO mapred.JobClient:  map 100% reduce 20%
+20/09/06 03:08:42 INFO mapred.JobClient:  map 100% reduce 26%
+20/09/06 03:08:47 INFO mapred.JobClient: Job complete: job_202009060304_0004
+20/09/06 03:08:47 INFO mapred.JobClient: Counters: 16
+20/09/06 03:08:47 INFO mapred.JobClient:   File Systems
+20/09/06 03:08:47 INFO mapred.JobClient:     HDFS bytes read=1770
+20/09/06 03:08:47 INFO mapred.JobClient:     HDFS bytes written=212
+20/09/06 03:08:47 INFO mapred.JobClient:     Local bytes read=558
+20/09/06 03:08:47 INFO mapred.JobClient:     Local bytes written=1848
+20/09/06 03:08:47 INFO mapred.JobClient:   Job Counters
+20/09/06 03:08:47 INFO mapred.JobClient:     Launched reduce tasks=1
+20/09/06 03:08:47 INFO mapred.JobClient:     Launched map tasks=15
+20/09/06 03:08:47 INFO mapred.JobClient:     Data-local map tasks=15
+20/09/06 03:08:47 INFO mapred.JobClient:   Map-Reduce Framework
+20/09/06 03:08:47 INFO mapred.JobClient:     Reduce input groups=2
+20/09/06 03:08:47 INFO mapred.JobClient:     Combine output records=0
+20/09/06 03:08:47 INFO mapred.JobClient:     Map input records=15
+20/09/06 03:08:47 INFO mapred.JobClient:     Reduce output records=0
+20/09/06 03:08:47 INFO mapred.JobClient:     Map output bytes=480
+20/09/06 03:08:47 INFO mapred.JobClient:     Map input bytes=360
+20/09/06 03:08:47 INFO mapred.JobClient:     Combine input records=0
+20/09/06 03:08:47 INFO mapred.JobClient:     Map output records=30
+20/09/06 03:08:47 INFO mapred.JobClient:     Reduce input records=30
+Job Finished in 42.647 seconds
+Estimated value of PI is 3.142
+hadoop-user@hadoop-desk:~/hadoop-0.18.0$ hadoop jar hadoop-0.18.0-examples.jar pi 15 100000
+Number of Maps = 15 Samples per Map = 100000
+Wrote input for Map #0
+Wrote input for Map #1
+Wrote input for Map #2
+Wrote input for Map #3
+Wrote input for Map #4
+Wrote input for Map #5
+Wrote input for Map #6
+Wrote input for Map #7
+Wrote input for Map #8
+Wrote input for Map #9
+Wrote input for Map #10
+Wrote input for Map #11
+Wrote input for Map #12
+Wrote input for Map #13
+Wrote input for Map #14
+Starting Job
+20/09/06 03:09:04 INFO mapred.FileInputFormat: Total input paths to process : 15
+20/09/06 03:09:04 INFO mapred.FileInputFormat: Total input paths to process : 15
+20/09/06 03:09:05 INFO mapred.JobClient: Running job: job_202009060304_0005
+20/09/06 03:09:06 INFO mapred.JobClient:  map 0% reduce 0%
+20/09/06 03:09:09 INFO mapred.JobClient:  map 13% reduce 0%
+20/09/06 03:09:10 INFO mapred.JobClient:  map 26% reduce 0%
+20/09/06 03:09:11 INFO mapred.JobClient:  map 33% reduce 0%
+20/09/06 03:09:12 INFO mapred.JobClient:  map 40% reduce 0%
+20/09/06 03:09:13 INFO mapred.JobClient:  map 53% reduce 0%
+20/09/06 03:09:15 INFO mapred.JobClient:  map 66% reduce 0%
+20/09/06 03:09:16 INFO mapred.JobClient:  map 80% reduce 0%
+20/09/06 03:09:17 INFO mapred.JobClient:  map 93% reduce 0%
+20/09/06 03:09:19 INFO mapred.JobClient:  map 100% reduce 0%
+20/09/06 03:09:28 INFO mapred.JobClient:  map 100% reduce 8%
+20/09/06 03:09:33 INFO mapred.JobClient:  map 100% reduce 13%
+20/09/06 03:09:34 INFO mapred.JobClient:  map 100% reduce 15%
+20/09/06 03:09:38 INFO mapred.JobClient:  map 100% reduce 20%
+20/09/06 03:09:43 INFO mapred.JobClient:  map 100% reduce 26%
+20/09/06 03:09:48 INFO mapred.JobClient: Job complete: job_202009060304_0005
+20/09/06 03:09:48 INFO mapred.JobClient: Counters: 16
+20/09/06 03:09:48 INFO mapred.JobClient:   File Systems
+20/09/06 03:09:48 INFO mapred.JobClient:     HDFS bytes read=1770
+20/09/06 03:09:48 INFO mapred.JobClient:     HDFS bytes written=212
+20/09/06 03:09:48 INFO mapred.JobClient:     Local bytes read=568
+20/09/06 03:09:48 INFO mapred.JobClient:     Local bytes written=1858
+20/09/06 03:09:48 INFO mapred.JobClient:   Job Counters
+20/09/06 03:09:48 INFO mapred.JobClient:     Launched reduce tasks=1
+20/09/06 03:09:48 INFO mapred.JobClient:     Launched map tasks=15
+20/09/06 03:09:48 INFO mapred.JobClient:     Data-local map tasks=15
+20/09/06 03:09:48 INFO mapred.JobClient:   Map-Reduce Framework
+20/09/06 03:09:48 INFO mapred.JobClient:     Reduce input groups=2
+20/09/06 03:09:48 INFO mapred.JobClient:     Combine output records=0
+20/09/06 03:09:48 INFO mapred.JobClient:     Map input records=15
+20/09/06 03:09:48 INFO mapred.JobClient:     Reduce output records=0
+20/09/06 03:09:48 INFO mapred.JobClient:     Map output bytes=480
+20/09/06 03:09:48 INFO mapred.JobClient:     Map input bytes=360
+20/09/06 03:09:48 INFO mapred.JobClient:     Combine input records=0
+20/09/06 03:09:48 INFO mapred.JobClient:     Map output records=30
+20/09/06 03:09:48 INFO mapred.JobClient:     Reduce input records=30
+Job Finished in 43.793 seconds
+Estimated value of PI is 3.14244
+hadoop-user@hadoop-desk:~/hadoop-0.18.0$ hadoop jar hadoop-0.18.0-examples.jar pi 15 10000000
+Number of Maps = 15 Samples per Map = 10000000
+Wrote input for Map #0
+Wrote input for Map #1
+Wrote input for Map #2
+Wrote input for Map #3
+Wrote input for Map #4
+Wrote input for Map #5
+Wrote input for Map #6
+Wrote input for Map #7
+Wrote input for Map #8
+Wrote input for Map #9
+Wrote input for Map #10
+Wrote input for Map #11
+Wrote input for Map #12
+Wrote input for Map #13
+Wrote input for Map #14
+Starting Job
+20/09/06 03:10:03 INFO mapred.FileInputFormat: Total input paths to process : 15
+20/09/06 03:10:03 INFO mapred.FileInputFormat: Total input paths to process : 15
+20/09/06 03:10:03 INFO mapred.JobClient: Running job: job_202009060304_0006
+20/09/06 03:10:04 INFO mapred.JobClient:  map 0% reduce 0%
+20/09/06 03:10:10 INFO mapred.JobClient:  map 6% reduce 0%
+20/09/06 03:10:11 INFO mapred.JobClient:  map 13% reduce 0%
+20/09/06 03:10:13 INFO mapred.JobClient:  map 26% reduce 0%
+20/09/06 03:10:15 INFO mapred.JobClient:  map 33% reduce 0%
+20/09/06 03:10:16 INFO mapred.JobClient:  map 40% reduce 0%
+20/09/06 03:10:18 INFO mapred.JobClient:  map 46% reduce 0%
+20/09/06 03:10:19 INFO mapred.JobClient:  map 53% reduce 0%
+20/09/06 03:10:20 INFO mapred.JobClient:  map 60% reduce 0%
+20/09/06 03:10:21 INFO mapred.JobClient:  map 66% reduce 0%
+20/09/06 03:10:23 INFO mapred.JobClient:  map 73% reduce 0%
+20/09/06 03:10:24 INFO mapred.JobClient:  map 80% reduce 0%
+20/09/06 03:10:26 INFO mapred.JobClient:  map 93% reduce 0%
+20/09/06 03:10:28 INFO mapred.JobClient:  map 100% reduce 0%
+20/09/06 03:10:33 INFO mapred.JobClient:  map 100% reduce 6%
+20/09/06 03:10:36 INFO mapred.JobClient:  map 100% reduce 8%
+20/09/06 03:10:41 INFO mapred.JobClient:  map 100% reduce 13%
+20/09/06 03:10:43 INFO mapred.JobClient:  map 100% reduce 15%
+20/09/06 03:10:46 INFO mapred.JobClient:  map 100% reduce 20%
+20/09/06 03:10:48 INFO mapred.JobClient:  map 100% reduce 22%
+20/09/06 03:10:51 INFO mapred.JobClient:  map 100% reduce 26%
+20/09/06 03:10:56 INFO mapred.JobClient: Job complete: job_202009060304_0006
+20/09/06 03:10:56 INFO mapred.JobClient: Counters: 16
+20/09/06 03:10:56 INFO mapred.JobClient:   File Systems
+20/09/06 03:10:56 INFO mapred.JobClient:     HDFS bytes read=1770
+20/09/06 03:10:56 INFO mapred.JobClient:     HDFS bytes written=212
+20/09/06 03:10:56 INFO mapred.JobClient:     Local bytes read=558
+20/09/06 03:10:56 INFO mapred.JobClient:     Local bytes written=1848
+20/09/06 03:10:56 INFO mapred.JobClient:   Job Counters
+20/09/06 03:10:56 INFO mapred.JobClient:     Launched reduce tasks=1
+20/09/06 03:10:56 INFO mapred.JobClient:     Launched map tasks=15
+20/09/06 03:10:56 INFO mapred.JobClient:     Data-local map tasks=15
+20/09/06 03:10:56 INFO mapred.JobClient:   Map-Reduce Framework
+20/09/06 03:10:56 INFO mapred.JobClient:     Reduce input groups=2
+20/09/06 03:10:56 INFO mapred.JobClient:     Combine output records=0
+20/09/06 03:10:56 INFO mapred.JobClient:     Map input records=15
+20/09/06 03:10:56 INFO mapred.JobClient:     Reduce output records=0
+20/09/06 03:10:56 INFO mapred.JobClient:     Map output bytes=480
+20/09/06 03:10:56 INFO mapred.JobClient:     Map input bytes=360
+20/09/06 03:10:56 INFO mapred.JobClient:     Combine input records=0
+20/09/06 03:10:56 INFO mapred.JobClient:     Map output records=30
+20/09/06 03:10:56 INFO mapred.JobClient:     Reduce input records=30
+Job Finished in 53.774 seconds
+Estimated value of PI is 3.1414134933333333
+hadoop-user@hadoop-desk:~/hadoop-0.18.0$ hadoop jar hadoop-0.18.0-examples.jar pi 20 10000
+Number of Maps = 20 Samples per Map = 10000
+Wrote input for Map #0
+Wrote input for Map #1
+Wrote input for Map #2
+Wrote input for Map #3
+Wrote input for Map #4
+Wrote input for Map #5
+Wrote input for Map #6
+Wrote input for Map #7
+Wrote input for Map #8
+Wrote input for Map #9
+Wrote input for Map #10
+Wrote input for Map #11
+Wrote input for Map #12
+Wrote input for Map #13
+Wrote input for Map #14
+Wrote input for Map #15
+Wrote input for Map #16
+Wrote input for Map #17
+Wrote input for Map #18
+Wrote input for Map #19
+Starting Job
+20/09/06 03:11:18 INFO mapred.FileInputFormat: Total input paths to process : 20
+20/09/06 03:11:18 INFO mapred.FileInputFormat: Total input paths to process : 20
+20/09/06 03:11:19 INFO mapred.JobClient: Running job: job_202009060304_0007
+20/09/06 03:11:20 INFO mapred.JobClient:  map 0% reduce 0%
+20/09/06 03:11:23 INFO mapred.JobClient:  map 5% reduce 0%
+20/09/06 03:11:24 INFO mapred.JobClient:  map 15% reduce 0%
+20/09/06 03:11:25 INFO mapred.JobClient:  map 20% reduce 0%
+20/09/06 03:11:27 INFO mapred.JobClient:  map 30% reduce 0%
+20/09/06 03:11:28 INFO mapred.JobClient:  map 40% reduce 0%
+20/09/06 03:11:30 INFO mapred.JobClient:  map 50% reduce 0%
+20/09/06 03:11:31 INFO mapred.JobClient:  map 60% reduce 0%
+20/09/06 03:11:32 INFO mapred.JobClient:  map 65% reduce 0%
+20/09/06 03:11:33 INFO mapred.JobClient:  map 70% reduce 0%
+20/09/06 03:11:34 INFO mapred.JobClient:  map 80% reduce 0%
+20/09/06 03:11:35 INFO mapred.JobClient:  map 85% reduce 0%
+20/09/06 03:11:36 INFO mapred.JobClient:  map 90% reduce 0%
+20/09/06 03:11:37 INFO mapred.JobClient:  map 100% reduce 0%
+20/09/06 03:11:47 INFO mapred.JobClient:  map 100% reduce 6%
+20/09/06 03:11:52 INFO mapred.JobClient:  map 100% reduce 10%
+20/09/06 03:11:53 INFO mapred.JobClient:  map 100% reduce 13%
+20/09/06 03:11:57 INFO mapred.JobClient:  map 100% reduce 15%
+20/09/06 03:12:02 INFO mapred.JobClient:  map 100% reduce 20%
+20/09/06 03:12:07 INFO mapred.JobClient:  map 100% reduce 23%
+20/09/06 03:12:08 INFO mapred.JobClient:  map 100% reduce 25%
+20/09/06 03:12:12 INFO mapred.JobClient:  map 100% reduce 28%
+20/09/06 03:12:17 INFO mapred.JobClient: Job complete: job_202009060304_0007
+20/09/06 03:12:17 INFO mapred.JobClient: Counters: 16
+20/09/06 03:12:17 INFO mapred.JobClient:   File Systems
+20/09/06 03:12:17 INFO mapred.JobClient:     HDFS bytes read=2360
+20/09/06 03:12:17 INFO mapred.JobClient:     HDFS bytes written=212
+20/09/06 03:12:17 INFO mapred.JobClient:     Local bytes read=738
+20/09/06 03:12:17 INFO mapred.JobClient:     Local bytes written=2458
+20/09/06 03:12:17 INFO mapred.JobClient:   Job Counters
+20/09/06 03:12:17 INFO mapred.JobClient:     Launched reduce tasks=1
+20/09/06 03:12:17 INFO mapred.JobClient:     Launched map tasks=20
+20/09/06 03:12:17 INFO mapred.JobClient:     Data-local map tasks=20
+20/09/06 03:12:17 INFO mapred.JobClient:   Map-Reduce Framework
+20/09/06 03:12:17 INFO mapred.JobClient:     Reduce input groups=2
+20/09/06 03:12:17 INFO mapred.JobClient:     Combine output records=0
+20/09/06 03:12:17 INFO mapred.JobClient:     Map input records=20
+20/09/06 03:12:17 INFO mapred.JobClient:     Reduce output records=0
+20/09/06 03:12:17 INFO mapred.JobClient:     Map output bytes=640
+20/09/06 03:12:17 INFO mapred.JobClient:     Map input bytes=480
+20/09/06 03:12:17 INFO mapred.JobClient:     Combine input records=0
+20/09/06 03:12:17 INFO mapred.JobClient:     Map output records=40
+20/09/06 03:12:17 INFO mapred.JobClient:     Reduce input records=40
+Job Finished in 58.909 seconds
+Estimated value of PI is 3.14216
+hadoop-user@hadoop-desk:~/hadoop-0.18.0$ hadoop jar hadoop-0.18.0-examples.jar pi 20 100000
+Number of Maps = 20 Samples per Map = 100000
+Wrote input for Map #0
+Wrote input for Map #1
+Wrote input for Map #2
+Wrote input for Map #3
+Wrote input for Map #4
+Wrote input for Map #5
+Wrote input for Map #6
+Wrote input for Map #7
+Wrote input for Map #8
+Wrote input for Map #9
+Wrote input for Map #10
+Wrote input for Map #11
+Wrote input for Map #12
+Wrote input for Map #13
+Wrote input for Map #14
+Wrote input for Map #15
+Wrote input for Map #16
+Wrote input for Map #17
+Wrote input for Map #18
+Wrote input for Map #19
+Starting Job
+20/09/06 03:12:44 INFO mapred.FileInputFormat: Total input paths to process : 20
+20/09/06 03:12:45 INFO mapred.FileInputFormat: Total input paths to process : 20
+20/09/06 03:12:45 INFO mapred.JobClient: Running job: job_202009060304_0008
+20/09/06 03:12:46 INFO mapred.JobClient:  map 0% reduce 0%
+20/09/06 03:12:49 INFO mapred.JobClient:  map 10% reduce 0%
+20/09/06 03:12:50 INFO mapred.JobClient:  map 20% reduce 0%
+20/09/06 03:12:52 INFO mapred.JobClient:  map 30% reduce 0%
+20/09/06 03:12:53 INFO mapred.JobClient:  map 40% reduce 0%
+20/09/06 03:12:54 INFO mapred.JobClient:  map 50% reduce 0%
+20/09/06 03:12:56 INFO mapred.JobClient:  map 60% reduce 0%
+20/09/06 03:12:57 INFO mapred.JobClient:  map 70% reduce 0%
+20/09/06 03:12:59 INFO mapred.JobClient:  map 80% reduce 0%
+20/09/06 03:13:00 INFO mapred.JobClient:  map 90% reduce 0%
+20/09/06 03:13:02 INFO mapred.JobClient:  map 100% reduce 0%
+20/09/06 03:13:12 INFO mapred.JobClient:  map 100% reduce 6%
+20/09/06 03:13:17 INFO mapred.JobClient:  map 100% reduce 11%
+20/09/06 03:13:22 INFO mapred.JobClient:  map 100% reduce 15%
+20/09/06 03:13:27 INFO mapred.JobClient:  map 100% reduce 20%
+20/09/06 03:13:32 INFO mapred.JobClient:  map 100% reduce 25%
+20/09/06 03:13:37 INFO mapred.JobClient:  map 100% reduce 28%
+20/09/06 03:13:42 INFO mapred.JobClient: Job complete: job_202009060304_0008
+20/09/06 03:13:42 INFO mapred.JobClient: Counters: 16
+20/09/06 03:13:42 INFO mapred.JobClient:   File Systems
+20/09/06 03:13:42 INFO mapred.JobClient:     HDFS bytes read=2360
+20/09/06 03:13:42 INFO mapred.JobClient:     HDFS bytes written=212
+20/09/06 03:13:42 INFO mapred.JobClient:     Local bytes read=738
+20/09/06 03:13:42 INFO mapred.JobClient:     Local bytes written=2458
+20/09/06 03:13:42 INFO mapred.JobClient:   Job Counters
+20/09/06 03:13:42 INFO mapred.JobClient:     Launched reduce tasks=1
+20/09/06 03:13:42 INFO mapred.JobClient:     Launched map tasks=20
+20/09/06 03:13:42 INFO mapred.JobClient:     Data-local map tasks=20
+20/09/06 03:13:42 INFO mapred.JobClient:   Map-Reduce Framework
+20/09/06 03:13:42 INFO mapred.JobClient:     Reduce input groups=2
+20/09/06 03:13:42 INFO mapred.JobClient:     Combine output records=0
+20/09/06 03:13:42 INFO mapred.JobClient:     Map input records=20
+20/09/06 03:13:42 INFO mapred.JobClient:     Reduce output records=0
+20/09/06 03:13:42 INFO mapred.JobClient:     Map output bytes=640
+20/09/06 03:13:42 INFO mapred.JobClient:     Map input bytes=480
+20/09/06 03:13:42 INFO mapred.JobClient:     Combine input records=0
+20/09/06 03:13:42 INFO mapred.JobClient:     Map output records=40
+20/09/06 03:13:42 INFO mapred.JobClient:     Reduce input records=40
+Job Finished in 58.065 seconds
+Estimated value of PI is 3.144608
+hadoop-user@hadoop-desk:~/hadoop-0.18.0$ hadoop jar hadoop-0.18.0-examples.jar pi 20 10000000
+Number of Maps = 20 Samples per Map = 10000000
+Wrote input for Map #0
+Wrote input for Map #1
+Wrote input for Map #2
+Wrote input for Map #3
+Wrote input for Map #4
+Wrote input for Map #5
+Wrote input for Map #6
+Wrote input for Map #7
+Wrote input for Map #8
+Wrote input for Map #9
+Wrote input for Map #10
+Wrote input for Map #11
+Wrote input for Map #12
+Wrote input for Map #13
+Wrote input for Map #14
+Wrote input for Map #15
+Wrote input for Map #16
+Wrote input for Map #17
+Wrote input for Map #18
+Wrote input for Map #19
+Starting Job
+20/09/06 03:13:57 INFO mapred.FileInputFormat: Total input paths to process : 20
+20/09/06 03:13:57 INFO mapred.FileInputFormat: Total input paths to process : 20
+20/09/06 03:13:58 INFO mapred.JobClient: Running job: job_202009060304_0009
+20/09/06 03:13:59 INFO mapred.JobClient:  map 0% reduce 0%
+20/09/06 03:14:05 INFO mapred.JobClient:  map 10% reduce 0%
+20/09/06 03:14:08 INFO mapred.JobClient:  map 20% reduce 0%
+20/09/06 03:14:11 INFO mapred.JobClient:  map 30% reduce 0%
+20/09/06 03:14:14 INFO mapred.JobClient:  map 40% reduce 0%
+20/09/06 03:14:18 INFO mapred.JobClient:  map 50% reduce 0%
+20/09/06 03:14:21 INFO mapred.JobClient:  map 60% reduce 0%
+20/09/06 03:14:24 INFO mapred.JobClient:  map 70% reduce 0%
+20/09/06 03:14:27 INFO mapred.JobClient:  map 80% reduce 0%
+20/09/06 03:14:31 INFO mapred.JobClient:  map 90% reduce 0%
+20/09/06 03:14:34 INFO mapred.JobClient:  map 100% reduce 0%
+20/09/06 03:14:44 INFO mapred.JobClient:  map 100% reduce 6%
+20/09/06 03:14:49 INFO mapred.JobClient:  map 100% reduce 11%
+20/09/06 03:14:54 INFO mapred.JobClient:  map 100% reduce 15%
+20/09/06 03:14:59 INFO mapred.JobClient:  map 100% reduce 20%
+20/09/06 03:15:04 INFO mapred.JobClient:  map 100% reduce 25%
+20/09/06 03:15:09 INFO mapred.JobClient:  map 100% reduce 26%
+20/09/06 03:15:14 INFO mapred.JobClient: Job complete: job_202009060304_0009
+20/09/06 03:15:14 INFO mapred.JobClient: Counters: 16
+20/09/06 03:15:14 INFO mapred.JobClient:   File Systems
+20/09/06 03:15:14 INFO mapred.JobClient:     HDFS bytes read=2360
+20/09/06 03:15:14 INFO mapred.JobClient:     HDFS bytes written=212
+20/09/06 03:15:14 INFO mapred.JobClient:     Local bytes read=738
+20/09/06 03:15:14 INFO mapred.JobClient:     Local bytes written=2458
+20/09/06 03:15:14 INFO mapred.JobClient:   Job Counters
+20/09/06 03:15:14 INFO mapred.JobClient:     Launched reduce tasks=1
+20/09/06 03:15:14 INFO mapred.JobClient:     Launched map tasks=20
+20/09/06 03:15:14 INFO mapred.JobClient:     Data-local map tasks=20
+20/09/06 03:15:14 INFO mapred.JobClient:   Map-Reduce Framework
+20/09/06 03:15:14 INFO mapred.JobClient:     Reduce input groups=2
+20/09/06 03:15:14 INFO mapred.JobClient:     Combine output records=0
+20/09/06 03:15:14 INFO mapred.JobClient:     Map input records=20
+20/09/06 03:15:14 INFO mapred.JobClient:     Reduce output records=0
+20/09/06 03:15:14 INFO mapred.JobClient:     Map output bytes=640
+20/09/06 03:15:14 INFO mapred.JobClient:     Map input bytes=480
+20/09/06 03:15:14 INFO mapred.JobClient:     Combine input records=0
+20/09/06 03:15:14 INFO mapred.JobClient:     Map output records=40
+20/09/06 03:15:14 INFO mapred.JobClient:     Reduce input records=40
+Job Finished in 76.796 seconds
+Estimated value of PI is 3.1417354
+hadoop-user@hadoop-desk:~/hadoop-0.18.0$ cat> dataset.txt
+apple apple apple
+banana grapes banana
+banana banana mango
+mango berry berry
+mango mango mango
+hadoop-user@hadoop-desk:~/hadoop-0.18.0$ hadoop fs -mkdir secpgm
+hadoop-user@hadoop-desk:~/hadoop-0.18.0$ bin/hadoop fs -put /home/hadoop-user/hadoop-0.18.0/dataset.txt/user/hadoop-user/secpgm
+Usage: java FsShell [-put <localsrc> ... <dst>]
+hadoop-user@hadoop-desk:~/hadoop-0.18.0$ hadoop fs -put /home/hadoop-user/hadoop-0.18.0/dataset.txt/user/hadoop-user/secpgm
+Usage: java FsShell [-put <localsrc> ... <dst>]
+hadoop-user@hadoop-desk:~/hadoop-0.18.0$ hadoop fs -put /home/hadoop-user/hadoop-0.18.0/dataset.txt /user/hadoop-user/secpgm
+hadoop-user@hadoop-desk:~/hadoop-0.18.0$ hadoop jar hadoop-0.18.0-examples.jar wordcount/user/hadoop-user/secpgm/dataset.txt /user/hadoop-user/final/
+Unknown program 'wordcount/user/hadoop-user/secpgm/dataset.txt' chosen.
+Valid program names are:
+  aggregatewordcount: An Aggregate based map/reduce program that counts the words in the input files.
+  aggregatewordhist: An Aggregate based map/reduce program that computes the histogram of the words in the input files.
+  grep: A map/reduce program that counts the matches of a regex in the input.
+  join: A job that effects a join over sorted, equally partitioned datasets
+  multifilewc: A job that counts words from several files.
+  pentomino: A map/reduce tile laying program to find solutions to pentomino problems.
+  pi: A map/reduce program that estimates Pi using monte-carlo method.
+  randomtextwriter: A map/reduce program that writes 10GB of random textual data per node.
+  randomwriter: A map/reduce program that writes 10GB of random data per node.
+  sleep: A job that sleeps at each map and reduce task.
+  sort: A map/reduce program that sorts the data written by the random writer.
+  sudoku: A sudoku solver.
+  wordcount: A map/reduce program that counts the words in the input files.
+hadoop-user@hadoop-desk:~/hadoop-0.18.0$ hadoop jar hadoop-0.18.0-examples.jar wordcount /user/hadoop-user/secpgm/dataset.txt /user/hadoop-user/final/
+20/09/06 03:54:43 INFO mapred.FileInputFormat: Total input paths to process : 1
+20/09/06 03:54:43 INFO mapred.FileInputFormat: Total input paths to process : 1
+20/09/06 03:54:44 INFO mapred.JobClient: Running job: job_202009060304_0012
+20/09/06 03:54:45 INFO mapred.JobClient:  map 0% reduce 0%
+20/09/06 03:54:46 INFO mapred.JobClient:  map 50% reduce 0%
+20/09/06 03:54:47 INFO mapred.JobClient:  map 100% reduce 0%
+20/09/06 03:54:51 INFO mapred.JobClient: Job complete: job_202009060304_0012
+20/09/06 03:54:51 INFO mapred.JobClient: Counters: 16
+20/09/06 03:54:51 INFO mapred.JobClient:   File Systems
+20/09/06 03:54:51 INFO mapred.JobClient:     HDFS bytes read=144
+20/09/06 03:54:51 INFO mapred.JobClient:     HDFS bytes written=42
+20/09/06 03:54:51 INFO mapred.JobClient:     Local bytes read=76
+20/09/06 03:54:51 INFO mapred.JobClient:     Local bytes written=250
+20/09/06 03:54:51 INFO mapred.JobClient:   Job Counters
+20/09/06 03:54:51 INFO mapred.JobClient:     Launched reduce tasks=1
+20/09/06 03:54:51 INFO mapred.JobClient:     Launched map tasks=2
+20/09/06 03:54:51 INFO mapred.JobClient:     Data-local map tasks=2
+20/09/06 03:54:51 INFO mapred.JobClient:   Map-Reduce Framework
+20/09/06 03:54:51 INFO mapred.JobClient:     Reduce input groups=5
+20/09/06 03:54:51 INFO mapred.JobClient:     Combine output records=11
+20/09/06 03:54:51 INFO mapred.JobClient:     Map input records=5
+20/09/06 03:54:51 INFO mapred.JobClient:     Reduce output records=5
+20/09/06 03:54:51 INFO mapred.JobClient:     Map output bytes=155
+20/09/06 03:54:51 INFO mapred.JobClient:     Map input bytes=95
+20/09/06 03:54:51 INFO mapred.JobClient:     Combine input records=21
+20/09/06 03:54:51 INFO mapred.JobClient:     Map output records=15
+20/09/06 03:54:51 INFO mapred.JobClient:     Reduce input records=5
+hadoop-user@hadoop-desk:~/hadoop-0.18.0$ hadoop fs -get output/* /home/hadoop-user/hadoop-0.18.0/
+hadoop-user@hadoop-desk:~/hadoop-0.18.0$ cat dataset.txt
+apple apple apple
+banana grapes banana
+banana banana mango
+mango berry berry
+mango mango mango
+hadoop-user@hadoop-desk:~/hadoop-0.18.0$ cat part-00000
+cat: part-00000: No such file or directory
+hadoop-user@hadoop-desk:~/hadoop-0.18.0$ hadoop fs -cat /user/hadoop-user/wordcount/final/part-00000
+cat: File does not exist: /user/hadoop-user/wordcount/final/part-00000
+hadoop-user@hadoop-desk:~/hadoop-0.18.0$ hadoop fs -cat /user/hadoop-user/final/part-00000
+apple   3
+banana  4
+berry   2
+grapes  1
+mango   5
+hadoop-user@hadoop-desk:~/hadoop-0.18.0$ tar -zcvf final.tar.gz /home/hadoop-user/hadoop-0.18.0/_logs /home/hadoop-user/hadoop-0.18.0/part-00000 /home/hadoop-user/hadoop-0.18.0/dataset.txt
+tar: Removing leading `/' from member names
+tar: /home/hadoop-user/hadoop-0.18.0/_logs: Cannot stat: No such file or directory
+tar: /home/hadoop-user/hadoop-0.18.0/part-00000: Cannot stat: No such file or directory
+/home/hadoop-user/hadoop-0.18.0/dataset.txt
+tar: Error exit delayed from previous errors
+hadoop-user@hadoop-desk:~/hadoop-0.18.0$ tar -zcvf final.tar.gz /home/hadoop-user/hadoop-0.18.0/_logs /user/hadoop-user/final/part-00000 /home/hadoop-user/dataset.txt
+tar: Removing leading `/' from member names
+tar: /home/hadoop-user/hadoop-0.18.0/_logs: Cannot stat: No such file or directory
+tar: /user/hadoop-user/final/part-00000: Cannot stat: No such file or directory
+tar: /home/hadoop-user/dataset.txt: Cannot stat: No such file or directory
+tar: Error exit delayed from previous errors
+hadoop-user@hadoop-desk:~/hadoop-0.18.0$ tar -zcvf final.tar.gz /home/hadoop-user/hadoop-0.18.0/var/log /user/hadoop-user/final/part-00000 /home/hadoop-user/dataset.txt
+tar: Removing leading `/' from member names
+tar: /home/hadoop-user/hadoop-0.18.0/var/log: Cannot stat: No such file or directory
+tar: /user/hadoop-user/final/part-00000: Cannot stat: No such file or directory
+tar: /home/hadoop-user/dataset.txt: Cannot stat: No such file or directory
+tar: Error exit delayed from previous errors
+hadoop-user@hadoop-desk:~/hadoop-0.18.0$ cd..
+-bash: cd..: command not found
+hadoop-user@hadoop-desk:~/hadoop-0.18.0$ cd ..
+hadoop-user@hadoop-desk:/var/log$ lastlog
+hadoop-user@hadoop-desk:~/hadoop-0.18.0$ tar -zcvf final.tar.gz /home/hadoop-user/hadoop-0.18.0/_logs /user/hadoop-user/final/part-00000 /home/hadoop-user/hadoop-0.18.0/dataset.txt
+tar: Removing leading `/' from member names
+tar: /home/hadoop-user/hadoop-0.18.0/_logs: Cannot stat: No such file or directory
+tar: /user/hadoop-user/final/part-00000: Cannot stat: No such file or directory
+/home/hadoop-user/hadoop-0.18.0/dataset.txt
+tar: Error exit delayed from previous errors
+hadoop-user@hadoop-desk:~$ cd hadoop-0.18.0
+hadoop-user@hadoop-desk:~/hadoop-0.18.0$ cd logs
+hadoop-user@hadoop-desk:~$ cd hadoop-0.18.0
+hadoop-user@hadoop-desk:~/hadoop-0.18.0$ cd ..
+hadoop-user@hadoop-desk:~$ cd user
+-bash: cd: user: No such file or director
+hadoop-user@hadoop-desk:~/hadoop-0.18.0$ unzip final.tar.gz
+The program 'unzip' is currently not installed.  You can install it by typing:
+sudo apt-get install unzip
+-bash: unzip: command not found
+hadoop-user@hadoop-desk:~/hadoop-0.18.0$ tar -xvf final.tar.gz
+home/hadoop-user/hadoop-0.18.0/dataset.txt
+hadoop-user@hadoop-desk:~/hadoop-0.18.0$ tar -zcrf final.tar.gz /home/hadoop-user/hadoop-0.18.0/logs/history /home/hadoop-user/hadoop-0.18.0/part-00000 /home/hadoop-user/hadoop-0.18.0/dataset.txt
+tar: You may not specify more than one `-Acdtrux' option
+hadoop-user@hadoop-desk:~/hadoop-0.18.0$ tar -zcrf final.tar.gz -r /home/hadoop-user/hadoop-0.18.0/logs/history -r /home/hadoop-user/hadoop-0.18.0/part-00000 -r /home/hadoop-user/hadoop-0.18.0/dataset.txt
+tar: You may not specify more than one `-Acdtrux' option
+Try `tar --help' or `tar --usage' for more information.
+hadoop-user@hadoop-desk:~/hadoop-0.18.0$ tar -gzip final.tar.gz -r /home/hadoop-user/hadoop-0.18.0/logs/history -r /home/hadoop-user/hadoop-0.18.0/part-00000 -r /home/hadoop-user/hadoop-0.18.0/dataset.txt
+tar: Options `-Aru' are incompatible with `-f -'
+Try `tar --help' or `tar --usage' for more information.
+hadoop-user@hadoop-desk:~/hadoop-0.18.0$ tar -gzip final.tar.gz /home/hadoop-user/hadoop-0.18.0/logs/history /home/hadoop-user/hadoop-0.18.0/part-00000 /home/hadoop-user/hadoop-0.18.0/dataset.txt
+tar: You must specify one of the `-Acdtrux' options
+Try `tar --help' or `tar --usage' for more information.
+hadoop-user@hadoop-desk:~/hadoop-0.18.0$ tar -cf final.tar.gz /home/hadoop-user/hadoop-0.18.0/logs/history /home/hadoop-user/hadoop-0.18.0/part-00000 /home/hadoop-user/hadoop-0.18.0/dataset.txt
+tar: Removing leading `/' from member names
+tar: /home/hadoop-user/hadoop-0.18.0/part-00000: Cannot stat: No such file or directory
+tar: Error exit delayed from previous errors
+hadoop-user@hadoop-desk:~$ tar -cf final.tar.gz /home/hadoop-user/hadoop-0.18.0/logs/history /home/hadoop-user/hadoop-0.18.0/part-00000 /home/hadoop-user/hadoop-0.18.0/dataset.txt
+tar: Removing leading `/' from member names
+tar: /home/hadoop-user/hadoop-0.18.0/part-00000: Cannot stat: No such file or directory
+tar: Error exit delayed from previous errors
+hadoop-user@hadoop-desk:~$ tar -cf final.tar.gz /home/hadoop-user/hadoop-0.18.0/logs/history /home/hadoop-user/hadoop-0.18.0/final/part-00000 /home/hadoop-user/hadoop-0.18.0/dataset.txt
+tar: Removing leading `/' from member names
+tar: /home/hadoop-user/hadoop-0.18.0/final/part-00000: Cannot stat: No such file or directory
+tar: Error exit delayed from previous errors
+hadoop-user@hadoop-desk:~$ tar -cf final.tar.gz home/hadoop-user/hadoop-0.18.0/logs/history home/hadoop-user/hadoop-0.18.0/final/part-00000 home/hadoop-user/hadoop-0.18.0/dataset.txt
+tar: home/hadoop-user/hadoop-0.18.0/logs/history: Cannot stat: No such file or directory
+tar: home/hadoop-user/hadoop-0.18.0/final/part-00000: Cannot stat: No such file or directory
+tar: home/hadoop-user/hadoop-0.18.0/dataset.txt: Cannot stat: No such file or directory
+tar: Error exit delayed from previous errors
+hadoop-user@hadoop-desk:~$ tar -cf final.tar.gz /home/hadoop-user/hadoop-0.18.0/logs/history /home/hadoop-user/hadoop-0.18.0/final/part-00000 /home/hadoop-user/hadoop-0.18.0/dataset.txt
+tar: Removing leading `/' from member names
+tar: /home/hadoop-user/hadoop-0.18.0/final/part-00000: Cannot stat: No such file or directory
+tar: Error exit delayed from previous errors
+hadoop-user@hadoop-desk:~$ tar -cf final.tar.gz /home/hadoop-user/hadoop-0.18.0/logs/history /user/hadoop-user/final/part-00000 /home/hadoop-user/hadoop-0.18.0/dataset.txt
+tar: Removing leading `/' from member names
+tar: /user/hadoop-user/final/part-00000: Cannot stat: No such file or directory
+tar: Error exit delayed from previous errors
+hadoop-user@hadoop-desk:~$ tar -cf final.tar.gz /home/hadoop-user/hadoop-0.18.0/logs/history /user/hadoop-user/hadoop-0.18.0/final/part-00000 /home/hadoop-user/hadoop-0.18.0/dataset.txt
+tar: Removing leading `/' from member names
+tar: /user/hadoop-user/hadoop-0.18.0/final/part-00000: Cannot stat: No such file or directory
+tar: Error exit delayed from previous errors
+hadoop-user@hadoop-desk:~$ ls
+final.tar.gz  hadoop  hadoop-0.18.0  hadoop-tutorial-conf  init-hdfs  pig  reset-hadoop  start-hadoop  stop-hadoop
+hadoop-user@hadoop-desk:~$ open final.tar.gz
+hadoop-user@hadoop-desk:~$ ls final.tar.gz
+final.tar.gz
+hadoop-user@hadoop-desk:~$ cd hadoop-0.18.0
+hadoop-user@hadoop-desk:~/hadoop-0.18.0$ tar -xzf final.tar.gz
+hadoop-user@hadoop-desk:~/hadoop-0.18.0$ tar -xvf final.tar.gz
+home/hadoop-user/hadoop-0.18.0/logs/history/
+home/hadoop-user/hadoop-0.18.0/dataset.txt
+hadoop-user@hadoop-desk:~/hadoop-0.18.0$ cd ..
+hadoop-user@hadoop-desk:~$ ./stop-hadoop
+stopping jobtracker
+ stopping tasktracker
+stopping namenode
+ stopping datanode
+stopping secondarynamenode
+hadoop-user@hadoop-desk:~$ scp -P **** hadoop-user@*.*.*.*:/home/hadoop-user/hadoop-0.18.0/final.tar.gz E:\
+> cd final8
+final: No such file or directory
+hadoop-user@hadoop-desk:~$ scp -P **** hadoop-user@*.*.*.*:/home/hadoop-user/hadoop-0.18.0/final.tar.gz E:
+Warning: Permanently added '*.*.*.*' (RSA) to the list of known hosts.
+ssh: E: Name or service not known
+lost connection
+hadoop-user@hadoop-desk:~$ scp -P **** hadoop-user@*.*.*.*:/home/hadoop-user/hadoop-0.18.0/final.tar.gz E:/hadoop-0.18.0
+ssh: E: Name or service not known
+lost connection
+hadoop-user@hadoop-desk:~$ ./start-hadoop
+starting namenode, logging to /home/hadoop-user/hadoop/bin/../logs/hadoop-hadoop-user-namenode-hadoop-desk.out
+ starting datanode, logging to /home/hadoop-user/hadoop/bin/../logs/hadoop-hadoop-user-datanode-hadoop-desk.out
+ starting secondarynamenode, logging to /home/hadoop-user/hadoop/bin/../logs/hadoop-hadoop-user-secondarynamenode-hadoop-desk.out
+starting jobtracker, logging to /home/hadoop-user/hadoop/bin/../logs/hadoop-hadoop-user-jobtracker-hadoop-desk.out
+ starting tasktracker, logging to /home/hadoop-user/hadoop/bin/../logs/hadoop-hadoop-user-tasktracker-hadoop-desk.out
+hadoop-user@hadoop-desk:~$ scp -P **** hadoop-user@*.*.*.*:/home/hadoop-user/hadoop-0.18.0/final.tar.gz E:/hadoop-0.18.0
+ssh: E: Name or service not known
+lost connection
